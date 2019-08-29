@@ -1,0 +1,20 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+
+/.idea
+
+/_ide_helper.php
+/_ide_helper_models.php
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.
+
+# If the vendor directory isn't being commited the composer.lock file should also be ignored
+composer.lock
