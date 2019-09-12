@@ -9,7 +9,7 @@ PHP 5.4.0 and later.
 ### Composer
 You can install the bindings via Composer. Run the following command:
 ```
-composer require readybytes/safimoney-sdk-php
+composer require safimoney/safimoney-php-sdk
 ```
 
 ### Getting Started
