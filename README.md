@@ -21,7 +21,7 @@ composer require safimoney/safimoney-php-sdk
 To make the payment via Safimoney, you need to first create a transaction in safimoney for your order.
 So you just need to create order and leave all the complexities of payment process to us.
 
-```json
+```
 $object = new \Safimoney\Redirect(YOUR_SAFIMONEY_KEY, YOUR_SAFIMONEY_SECRET);
 
 //required parameters
@@ -62,7 +62,7 @@ For more detail, you can refer this [document](https://gitlab.com/readybytes/saf
 
 To deposit a wallet Via Cash In API you need to make request with your API Credentials to SafiMoney.
 
-```json
+```
 $object = new \Safimoney\CashInCashOut(YOUR_SAFIMONEY_KEY, YOUR_SAFIMONEY_SECRET);
 
 //required parameters
@@ -87,7 +87,7 @@ To make cash out request you need to follow the below steps :
 
    When customer will provide transaction ID, to get the full detail you can search the transaction from given ID. 
 
-   ```json
+   ```
    $object = new \Safimoney\CashInCashOut(YOUR_SAFIMONEY_KEY, YOUR_SAFIMONEY_SECRET);
    
    //required parameters
@@ -106,7 +106,7 @@ To make cash out request you need to follow the below steps :
 
    Before approving Cash out request, you need to submit the ID Proof which will be attached to the given Transaction ID.
 
-   ```json
+   ```
    $object = new \Safimoney\CashInCashOut(YOUR_SAFIMONEY_KEY, YOUR_SAFIMONEY_SECRET);
    
    //required parameters
@@ -131,7 +131,7 @@ To make cash out request you need to follow the below steps :
 
    Before approving Cash out request, you need to submit the ID Proof which will be attached to the given Transaction ID.
 
-   ```json
+   ```
    $object = new \Safimoney\CashInCashOut(YOUR_SAFIMONEY_KEY, YOUR_SAFIMONEY_SECRET);
    
    //required parameters
