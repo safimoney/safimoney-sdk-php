@@ -4,7 +4,7 @@
 
 To deposit a wallet Via Cash In API you need to make request with your API Credentials to SafiMoney.
 
-```
+```php
 $object = new \Safimoney\CashInCashOut(YOUR_SAFIMONEY_KEY, YOUR_SAFIMONEY_SECRET);
 
 //required parameters
@@ -31,7 +31,7 @@ To make cash out request you need to follow the below steps :
 
    When customer will provide transaction ID, to get the full detail you can search the transaction from given ID. 
 
-   ```
+   ```php
    $object = new \Safimoney\CashInCashOut(YOUR_SAFIMONEY_KEY, YOUR_SAFIMONEY_SECRET);
    
    //required parameters
@@ -58,7 +58,7 @@ To make cash out request you need to follow the below steps :
        'id'      	=> '100000000022', // Transaction ID of cash out Request,
        'name' 	=> 'Name of the ID PROOF',// Name of your Id Proof ex. Passport, ID Proof
        'number' 	=> '12334',// Number of ID Proof
-       'expiry_date' => '2022-04-18',// Expiry Date of ID Proof, format should yy-mm-dd
+       'expiry_date' => '2022-04-18',// Expiry Date of ID Proof, format should yyyy-mm-dd
        'type' => '10'// Type of ID Proof e.g for Personal ID Proof set 10 for Business type set 20
    ];
    $result = $object->saveIdProof($payload);
@@ -75,7 +75,7 @@ To make cash out request you need to follow the below steps :
 
    Before approving Cash out request, you need to submit the ID Proof which will be attached to the given Transaction ID.
 
-   ```
+   ```php
    $object = new \Safimoney\CashInCashOut(YOUR_SAFIMONEY_KEY, YOUR_SAFIMONEY_SECRET);
    
    //required parameters
