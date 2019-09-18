@@ -80,8 +80,10 @@ To make cash out request you need to follow the below steps :
    
    //required parameters
    $payload = [
-       'id'      	=> '100000000022', // Transaction ID of cash out Request,
-       'pin_number' 	=> 'Name of the ID PROOF',// Withdraw code which will be shared by customer
+      //1. Transaction ID of cash out Request,
+       'id'      	=> '1000000000123456', // 16 digit numeric only, 
+       //2.  Withdraw code, shared by customer
+       'pin_number' 	=> '123456',// Six digits
    ];
    $result = $object->cashOut($payload);
    
